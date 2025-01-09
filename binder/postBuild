@@ -1,0 +1,33 @@
+#!/bin/bash
+set -e
+
+#i can't see why i did this - lets try moving it to the build itself
+#pip install tensorrt --extra-index-url https://pypi.nvidia.com
+
+# hack for fixing cudnn found during Kolkata 2024 event
+pip install --upgrade nvidia-cudnn-cu12
+
+# pip appears to leave behind 4GB of stuff.. lets remove it.
+pip cache purge
+
+#clean up some big files - maybe we don't need them
+rm `find /srv/conda/envs -size +50M -name \*.a`
+
+# add nsys for GPU lectures
+# fragile to say the least...will need updating to keep versions current
+mkdir nsys_work
+cd nsys_work
+wget https://developer.nvidia.com/downloads/assets/tools/secure/nsight-systems/2024_7/nsight-systems-2024.7.1_2024.7.1.84-1_amd64.deb
+ar x nsight-systems-2024.7.1_2024.7.1.84-1_amd64.deb
+tar xf data.tar.gz
+rm data.tar.gz
+mv opt /srv/conda/envs/notebook
+
+#clean up. maybe too much?
+cd ..
+rm -r nsys_work
+
+cd /srv/conda/envs/notebook/bin
+ln -s ../opt/nvidia/nsight-systems/2024.7.1/bin/nsys
+
+

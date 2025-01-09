@@ -1,0 +1,85 @@
+name: hsf-india
+channels:
+  - defaults
+  - nvidia/label/cuda-12.4.1
+dependencies:
+  - python=3.10
+  - libcurand
+  - libcurand-dev
+  - cuda-minimal-build=12.4
+  - cupy
+  - graphviz
+  - nomkl #remove the large mkl lib stuff
+  - pip
+#  - emacs - broken after install, so just remove it
+  - zstandard
+  - zstd
+  - clang-tools
+  - fsspec
+  - lz4
+  - python-xxhash
+  - pyarrow
+#  - root
+  - cmake #needed to compile Geant examples
+  - openssh #otherwise ssh is broken due to bug with openssl it seems
+  - pip:
+      - astunparse
+      - awkward
+      - cabinetry
+      - coffea
+      - dask
+      - dask-awkward
+      - distributed
+      - dm-haiku
+      - h5py
+      - hepunits
+      - hist
+      - ipympl
+      - jupyterlab-deck
+      - jupyterlab-mathjax3
+      - matplotlib
+      - numba
+      - numexpr
+      - numpy
+      #cudf does not support pandas 2.0 until 24.04 (otherwise 1.5.3)
+      - pandas
+      - particle
+      - protobuf
+      - pyarrow
+      - pybind11
+      - pycuda #seems that this needs to be installed together with numpy
+      - pyhf
+      - scikit-learn
+      #- servicex
+      - tables
+      - uproot
+      - vector
+      - mplhep
+      - requests
+      - aiohttp
+      - jax[cuda12]
+      - graphviz
+      - dask-labextension
+      - servicex
+      - tensorflow
+      - tensorflow-probability
+      - tensorrt
+      - scikit-learn
+      - seaborn
+      - xgboost
+      - torch
+      #==2.3.0
+      - torchvision
+      - torchaudio
+      
+#variables:
+#  LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/:$CONDA_PREFIX/x86_64-conda-linux-gnu/sysroot/usr/lib64/'"
+#  QT_QPA_PLATFORM: "offscreen"
+# hum, the variables got out of sync..  
+     
+variables:
+  LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
+  XLA_FLAGS: "'--xla_gpu_cuda_data_dir=$CONDA_PREFIX/'"
+# not needed for Delhi setup
+#  NUMBA_CUDA_ENABLE_MINOR_VERSION_COMPATIBILITY: "1"
+  

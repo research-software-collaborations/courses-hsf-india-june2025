@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#C++ introduction lectures
+git clone https://github.com/hsf-india-january2025/ScientificPython
+git clone https://github.com/hsf-india-january2025/MachineLearning
+git clone https://github.com/hsf-india-january2025/PythonGPU
+git clone https://github.com/hsf-india-january2025/GPUCuda
+git clone https://github.com/hsf-india-january2025/L1Trigger
+git clone https://github.com/hsf-india-january2025/IrisHepAnalysis
+
+
+rm -rf binder
+rm -rf docker_info
+rm README.md
+
+exec "$@"
