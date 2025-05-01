@@ -26,7 +26,7 @@ dependencies:
       - astunparse
       - awkward
       - cabinetry
-      - coffea
+      - coffea==v2025.3.0 #pin coffea to force a rebuild of things..
       - dask
       - dask-awkward
       - distributed
