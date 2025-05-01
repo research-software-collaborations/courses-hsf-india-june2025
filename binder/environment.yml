@@ -9,7 +9,7 @@ dependencies:
   - cuda-minimal-build=12.4
   - cupy
   - graphviz
-  - libxi6 # 250501 - gtk3 install complains about missing libxi6.
+  - libxi-cos6-x86_64 # 250501 - gtk3 install complains about missing libxi6.
   - nomkl #remove the large mkl lib stuff
   - pip
 #  - emacs - broken after install, so just remove it
