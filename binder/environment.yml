@@ -8,7 +8,8 @@ dependencies:
   - libcurand-dev
   - cuda-minimal-build=12.4
   - cupy
-#  - graphviz #seems to error out with missing dependency via gtk3 to libXi..
+  - xorg-libxi 
+  - graphviz #seems to error out with missing dependency via gtk3 to libXi..
   - nomkl #remove the large mkl lib stuff
   - pip
 #  - emacs - broken after install, so just remove it
