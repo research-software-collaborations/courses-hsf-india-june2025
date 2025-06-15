@@ -4,6 +4,7 @@ channels:
   - nvidia/label/cuda-12.4.1
 dependencies:
   - python=3.10
+  - cuda-toolkit
 #  - libcurand
 #  - libcurand-dev
 #  - cuda-minimal-build=12.4
