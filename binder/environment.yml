@@ -1,13 +1,13 @@
 name: hsf-india
 channels:
   - defaults
-#  - nvidia/label/cuda-12.4.1
+  - nvidia/label/cuda-12.4.1
 dependencies:
   - python=3.10
 #  - libcurand
 #  - libcurand-dev
 #  - cuda-minimal-build=12.4
-#  - cupy
+  - cupy
 #  #- xorg-libxi 
   - graphviz=2.40.1  #without version, graphviz install errors out with missing dependency via gtk3 to libXi..
   - nomkl #remove the large mkl lib stuff
@@ -49,7 +49,7 @@ dependencies:
       - protobuf
       - pyarrow
       - pybind11
-#      - pycuda #seems that this needs to be installed together with numpy
+      - pycuda #seems that this needs to be installed together with numpy
       - pyhf
       - pyshp
       - scikit-learn
