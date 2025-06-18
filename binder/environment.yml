@@ -39,7 +39,7 @@ dependencies:
       - ipympl
       - jupyterlab-deck
       - jupyterlab-mathjax3
-      - matplotlib
+      - matplotlib==3.8
       - numba
       - numexpr
       - numpy
