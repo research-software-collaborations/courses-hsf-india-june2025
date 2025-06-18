@@ -1,3 +1,6 @@
 [submodule "intro-to-ml-exercises"]
 	path = intro-to-ml-exercises
 	url = https://github.com/ligerlac/intro-to-ml-exercises
+[submodule "ScientificPython_withGPUs"]
+	path = ScientificPython_withGPUs
+	url = git@github.com:davidlange6/ScientificPython_withGPUs.git
