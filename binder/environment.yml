@@ -1,6 +1,7 @@
 name: hsf-india
 channels:
   - defaults
+  - conda-forge  # Add conda-forge channel
   - nvidia/label/cuda-12.4.1
 dependencies:
   - python=3.10
@@ -9,7 +10,8 @@ dependencies:
   - cuda-minimal-build=12.4
   - cupy
   #- xorg-libxi 
-  - graphviz=2.40.1  #without version, graphviz install errors out with missing dependency via gtk3 to libXi..
+  - graphviz  # Remove version pin and let conda-forge provide a complete version
+  - python-graphviz  # Add this for Python bindings
   - nomkl #remove the large mkl lib stuff
   - pip
 #  - emacs - broken after install, so just remove it
@@ -59,8 +61,7 @@ dependencies:
       - mplhep
       - requests
       - aiohttp
-      - jax[cuda12]
-      - graphviz
+      # Remove graphviz from pip since we're installing it via conda
       - dask-labextension
       - servicex
       - tensorflow
@@ -73,15 +74,3 @@ dependencies:
       #==2.3.0
       - torchvision
       - torchaudio
-      
-#variables:
-#  LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/:$CONDA_PREFIX/x86_64-conda-linux-gnu/sysroot/usr/lib64/'"
-#  QT_QPA_PLATFORM: "offscreen"
-# hum, the variables got out of sync..  
-     
-variables:
-  LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
-  XLA_FLAGS: "'--xla_gpu_cuda_data_dir=$CONDA_PREFIX/'"
-# not needed for Delhi setup
-#  NUMBA_CUDA_ENABLE_MINOR_VERSION_COMPATIBILITY: "1"
-  
