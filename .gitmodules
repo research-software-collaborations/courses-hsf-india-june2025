@@ -4,3 +4,6 @@
 [submodule "ScientificPython_withGPUs"]
 	path = ScientificPython_withGPUs
 	url = https://github.com/davidlange6/ScientificPython_withGPUs
+[submodule "hls4ml-exercises"]
+	path = hls4ml-exercises
+	url = https://github.com/ligerlac/hls4ml-exercises.git
