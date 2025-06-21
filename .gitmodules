@@ -2,7 +2,7 @@
 	path = MachineLearning
 	url = https://github.com/ligerlac/intro-to-ml-exercises
 [submodule "ScientificPython_withGPUs"]
-	path = ScientificPython_withGPUs
+	path = Scientific-Python-GPUs
 	url = https://github.com/davidlange6/ScientificPython_withGPUs
 [submodule "hls4ml-exercises"]
 	path = L1Trigger-HLS4ML
