@@ -1,14 +1,14 @@
 [submodule "intro-to-ml-exercises"]
-	path = intro-to-ml-exercises
+	path = MachineLearning
 	url = https://github.com/ligerlac/intro-to-ml-exercises
 [submodule "ScientificPython_withGPUs"]
 	path = ScientificPython_withGPUs
 	url = https://github.com/davidlange6/ScientificPython_withGPUs
 [submodule "hls4ml-exercises"]
-	path = hls4ml-exercises
+	path = L1Trigger-HLS4ML
 	url = https://github.com/ligerlac/hls4ml-exercises.git
 [submodule "tutorial-managing-software-hsf-india-june2025"]
-	path = tutorial-managing-software-hsf-india-june2025
+	path = Managing-Software
 	url = https://github.com/vimartin/tutorial-managing-software-hsf-india-june2025
 [submodule "Scientific-Python"]
 	path = Scientific-Python
