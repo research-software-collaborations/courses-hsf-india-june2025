@@ -7,3 +7,6 @@
 [submodule "hls4ml-exercises"]
 	path = hls4ml-exercises
 	url = https://github.com/ligerlac/hls4ml-exercises.git
+[submodule "tutorial-managing-software-hsf-india-june2025"]
+	path = tutorial-managing-software-hsf-india-june2025
+	url = https://github.com/vimartin/tutorial-managing-software-hsf-india-june2025
