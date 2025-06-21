@@ -10,3 +10,12 @@
 [submodule "tutorial-managing-software-hsf-india-june2025"]
 	path = tutorial-managing-software-hsf-india-june2025
 	url = https://github.com/vimartin/tutorial-managing-software-hsf-india-june2025
+[submodule "Scientific-Python"]
+	path = Scientific-Python
+	url = https://github.com/maxgalli/2025-06-15-hsf-india-tutorial-bangalore
+[submodule "HEP-Statistics"]
+	path = HEP-Statistics
+	url = https://github.com/maxgalli/statistics-das-India
+[submodule "AnalysisGrandChallenge-Demo"]
+	path = AnalysisGrandChallenge-Demo
+	url = https://github.com/pallabidas/hsf-india-bangalore-agc-demo
