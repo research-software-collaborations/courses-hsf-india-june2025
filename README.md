@@ -1,2 +1,2 @@
-Binderhub environment definition and courses for HSF-India software workshop at IISc Bangalore, held 15-21 June, 2025.
-Find more information about our event [here](https://indico.cern.ch/event/1519117/).
+Jupyter notebooks, course materials and binderhub environment definitions for HSF-India software workshop at IISc Bangalore, held 15-21 June, 2025.
+Find more information including slides from our lectures [here](https://indico.cern.ch/event/1519117/). This repository relies on submodules, so remember to use git clone --recursive https://github.com/research-software-collaborations/courses-hsf-india-june2025 to get the full set of information
